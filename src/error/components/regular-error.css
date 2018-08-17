@@ -1,0 +1,14 @@
+.RegularError {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  left: 0;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  color: white;
+}
+.RegularError-reload {
+  color: red;
+  text-decoration: underline;
+}

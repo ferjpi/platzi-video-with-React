@@ -17,18 +17,18 @@ class Media extends PureComponent {
   //
   //   this.handleClick = this.handleClick.bind(this)
   // }
-  state = {
-    author: 'Leonidas Esteban'
-  }
+  // state = {
+  //   author: 'Leonidas Esteban'
+  // }
 
 
   // ES7
-  handleClick = (event) => {
-    // console.log(this.props.title)
-    this.setState({
-      author: 'Ricardo Celis'
-    })
-  }
+  // handleClick = (event) => {
+  //   // console.log(this.props.title)
+  //   this.setState({
+  //     author: 'Ricardo Celis'
+  //   })
+  // }
 
   render() {
     const styles = {
@@ -43,7 +43,7 @@ class Media extends PureComponent {
     return (
       // <div style={styles.container}>
       // El this hace referencia a la clase Media
-      <div className="Media" onClick={this.handleClick}>
+      <div className="Media" onClick={this.props.handleClick}>
         <div className="Media-cover">
           <img className="Media-image"
             src={this.props.cover}
